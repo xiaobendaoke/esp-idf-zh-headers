@@ -196,7 +196,10 @@ def main(argv: list[str] | None = None) -> int:
             print(f"  Unmatched English items  : {res.unmatched_en_comments}")
             if not res.dry_run and res.modified_headers > 0:
                 print(
-                    "\n提示：请在 VS Code / Cursor 中按 Ctrl+Shift+P 执行 `clangd: Restart language server` 以刷新中文补全悬停。"
+                    "\n提示：\n"
+                    "  1. 若你的工程此前已被 clangd 索引过，请先删除工程下的 `build/.cache/clangd`（或 `.cache/clangd`）旧索引缓存\n"
+                    "     （防止旧 `.c.*.idx` 定义分片中残留的英文注释覆盖新头文件注释）；\n"
+                    "  2. 在 VS Code / Cursor 中按 Ctrl+Shift+P 执行 `clangd: Restart language server` 即可看到全中文提示。"
                 )
             return 0
 

@@ -92,8 +92,24 @@ python idf_zh.py apply --idf-path "C:\esp\v6.1\esp-idf"
 python idf_zh.py apply --idf-path "C:\esp\v6.1\esp-idf" --target all
 ```
 
-### 4. 在编辑器中刷新索引（立即生效）
+### 4. 清理旧项目 `clangd` 索引缓存并刷新编辑器（关键步骤！）
 
+> [!IMPORTANT]
+> 如果你的固件工程此前已经用 `clangd` 打开并后台索引过，工程目录下 `build/.cache/clangd/index/`（或 `.cache/clangd/index/`）中的 `.c.*.idx` 实现文件索引里会缓存汉化前的**旧英文注释**（由于 `.c` 源文件本身未变动，`clangd` 重启后仍会优先读取 `.c.*.idx` 中的旧英文文档覆盖 `.h` 的新中文注释）。
+
+因此首次汉化已有工程后，请先删除该工程下的 `.cache/clangd` 缓存目录，再重启语言服务器：
+
+```powershell
+# PowerShell（在你的固件工程目录下执行，将 build 替换为实际构建目录）
+Remove-Item -Recurse -Force .\build\.cache\clangd -ErrorAction SilentlyContinue
+```
+
+```bash
+# Linux / macOS
+rm -rf ./build/.cache/clangd ./.cache/clangd
+```
+
+随后在编辑器中刷新索引：
 - **VS Code / Cursor / Antigravity (`clangd`)**：按 `Ctrl + Shift + P`（macOS 为 `Cmd + Shift + P`），运行 **`clangd: Restart language server`**。
 - **VS Code Microsoft C/C++ 插件**：按 `Ctrl + Shift + P`，运行 **`C/C++: Reset IntelliSense Database`**。
 

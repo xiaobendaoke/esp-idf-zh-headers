@@ -35,7 +35,7 @@ python idf_zh.py apply --idf-path /path/to/esp-idf --target all
 python idf_zh.py restore --idf-path /path/to/esp-idf --target all
 ```
 
-After running `apply`, restart `clangd` (`Ctrl+Shift+P` -> **`clangd: Restart language server`**) to reload header documentation immediately.
+After running `apply` on an existing project, **delete any stale project-local `clangd` index cache** (`rm -rf build/.cache/clangd .cache/clangd` — otherwise old `.c.*.idx` definition shards cached before patching will override the newly translated `.h` comments), then restart `clangd` (`Ctrl+Shift+P` -> **`clangd: Restart language server`**).
 
 ## License & Attribution
 
