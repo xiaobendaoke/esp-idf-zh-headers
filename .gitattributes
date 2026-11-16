@@ -1,0 +1,7 @@
+# Enforce consistent LF line endings across Windows, macOS, and Linux
+* text=auto eol=lf
+*.py text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.toml text eol=lf
+*.yml text eol=lf

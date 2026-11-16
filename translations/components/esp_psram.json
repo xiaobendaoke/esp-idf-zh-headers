@@ -1,0 +1,13 @@
+{
+  "component": "esp_psram",
+  "headers": [
+    "components/esp_psram/include/esp_psram.h"
+  ],
+  "entry_count": 4,
+  "entries": {
+    "/**\n * @brief Initialize PSRAM interface/hardware.\n * Initializes the PSRAM hardware and load the XIP segments or maps the PSRAM memory\n *\n * @return\n *        - ESP_OK:                On success\n *        - ESP_FAIL:              PSRAM isn't initialized successfully, potential reason would be: wrong VDDSDIO, invalid chip ID, etc.\n *        - ESP_ERR_INVALID_STATE: PSRAM is initialized already\n */": "/**\n * @brief 初始化 PSRAM 接口/硬件。\n * 初始化 PSRAM 硬件并加载 XIP 段或映射 PSRAM 内存\n *\n * @return\n *        - ESP_OK：成功\n *        - ESP_FAIL：PSRAM 未能成功初始化，可能的原因包括：VDDSDIO 错误、芯片 ID 无效等\n *        - ESP_ERR_INVALID_STATE：PSRAM 已经初始化\n */",
+    "/**\n * @brief If PSRAM has been initialized\n *\n * @return\n *          - true:  PSRAM has been initialized successfully\n *          - false: PSRAM hasn't been initialized or initialized failed\n */": "/**\n * @brief 判断 PSRAM 是否已初始化\n *\n * @return\n *          - true：PSRAM 已成功初始化\n *          - false：PSRAM 尚未初始化或初始化失败\n */",
+    "/**\n * @brief Get the available size of the attached PSRAM chip\n *\n * @return Size in bytes, or 0 if PSRAM isn't successfully initialized\n */": "/**\n * @brief 获取所连接 PSRAM 芯片的可用大小\n *\n * @return 大小（字节），如果 PSRAM 未成功初始化则返回 0\n */",
+    "/**\n * @brief Check if the pointer falls inside the unencrypted PSRAM carve-out region\n *\n * When @c CONFIG_SPIRAM_ENC_EXEMPT is enabled, esp_psram reserves a region of PSRAM\n * that is mapped without encryption and exposed through the @c MALLOC_CAP_SPIRAM_NO_ENC\n * heap capability. This function lets drivers verify whether a buffer returned by the\n * heap allocator actually lives in that unencrypted region — useful for example after\n * a @c heap_caps_malloc_prefer() call that may have fallen back to encrypted PSRAM.\n *\n * @param[in] p  The pointer to check\n *\n * @return\n *        - true:  the pointer is within the unencrypted PSRAM carve-out\n *        - false: the pointer is not in the carve-out, PSRAM is not initialized,\n *                 or @c CONFIG_SPIRAM_ENC_EXEMPT is disabled\n */": "/**\n * @brief 检查指针是否位于未加密的 PSRAM 预留区域内\n *\n * 当启用 @c CONFIG_SPIRAM_ENC_EXEMPT 时，esp_psram 会预留一块不加密映射的 PSRAM 区域，\n * 并通过 @c MALLOC_CAP_SPIRAM_NO_ENC 堆内存能力标志对外提供。\n * 此函数可让驱动程序验证堆分配器返回的缓冲区是否确实位于该未加密区域中——\n * 例如在调用可能会回退到加密 PSRAM 的 @c heap_caps_malloc_prefer() 之后非常有用。\n *\n * @param[in] p  要检查的指针\n *\n * @return\n *        - true：指针位于未加密的 PSRAM 预留区域内\n *        - false：指针不在该预留区域内、PSRAM 未初始化，\n *                 或 @c CONFIG_SPIRAM_ENC_EXEMPT 已禁用\n */"
+  }
+}

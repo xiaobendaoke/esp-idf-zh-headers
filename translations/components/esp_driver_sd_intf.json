@@ -1,0 +1,36 @@
+{
+  "component": "esp_driver_sd_intf",
+  "headers": [
+    "components/esp_driver_sd_intf/include/driver/sd_host.h",
+    "components/esp_driver_sd_intf/include/driver/sd_types.h"
+  ],
+  "entry_count": 26,
+  "entries": {
+    "/**\n * @brief Configure SD Host slot\n *\n * @param[in] slot        SD Host slot handle\n * @param[in] config      SD Host slot configuration\n *\n * @return\n *        - ESP_OK:                 On success\n *        - ESP_ERR_INVALID_ARG:    Invalid argument\n */": "/**\n * @brief 配置 SD Host 插槽\n *\n * @param[in] slot        SD Host 插槽句柄\n * @param[in] config      SD Host 插槽配置\n *\n * @return\n *        - ESP_OK:                 成功\n *        - ESP_ERR_INVALID_ARG:    参数无效\n */",
+    "/**\n * @brief Do a transaction for the slot\n *\n * @param[in] slot        SD Host slot handle\n * @param[in] cmdinfo     SD command info, see `sdmmc_command_t`\n *\n * @return\n *        - ESP_OK:                 On success\n *        - ESP_ERR_INVALID_ARG:    Invalid argument\n */": "/**\n * @brief 为插槽执行一次传输事务\n *\n * @param[in] slot        SD Host 插槽句柄\n * @param[in] cmdinfo     SD 命令信息，参见 `sdmmc_command_t`\n *\n * @return\n *        - ESP_OK:                 成功\n *        - ESP_ERR_INVALID_ARG:    参数无效\n */",
+    "/**\n * @brief Register SD event callbacks\n *\n * @note User can deregister a previously registered callback by calling this function and setting the to-be-deregistered callback member in\n *       the `cbs` structure to NULL.\n *\n * @param[in] slot         SD Host slot handle\n * @param[in] cbs          Group of callback functions\n * @param[in] user_data    User data, which will be delivered to the callback functions directly\n *\n * @return\n *        - ESP_OK:                On success\n *        - ESP_ERR_INVALID_ARG:   Invalid arguments\n *        - ESP_ERR_INVALID_STATE: Driver state is invalid, you shouldn't call this API at this moment\n */": "/**\n * @brief 注册 SD 事件回调函数\n *\n * @note 用户可以通过调用此函数并将 `cbs` 结构体中待注销的回调成员设为 NULL，来注销先前注册的回调函数。\n *\n * @param[in] slot         SD Host 插槽句柄\n * @param[in] cbs          回调函数组\n * @param[in] user_data    用户数据，将直接传递给回调函数\n *\n * @return\n *        - ESP_OK:                成功\n *        - ESP_ERR_INVALID_ARG:   参数无效\n *        - ESP_ERR_INVALID_STATE: 驱动状态无效，当前不应调用此 API\n */",
+    "/**\n * @brief Remove an SD Host slot\n *\n * @param[in] slot        SD Host slot handle\n *\n * @return\n *        - ESP_OK:                 On success\n *        - ESP_ERR_INVALID_STATE:  Invalid state, slot is not available\n *        - ESP_ERR_INVALID_ARG:    Invalid argument\n */": "/**\n * @brief 移除 SD Host 插槽\n *\n * @param[in] slot        SD Host 插槽句柄\n *\n * @return\n *        - ESP_OK:                 成功\n *        - ESP_ERR_INVALID_STATE:  状态无效，插槽不可用\n *        - ESP_ERR_INVALID_ARG:    参数无效\n */",
+    "/**\n * @brief Set an SD Host slot clock always on\n *\n * @param[in] slot        SD Host slot handle\n * @param[in] always_on   Always on or not\n *\n * @return\n *        - ESP_OK:                 On success\n *        - ESP_ERR_INVALID_ARG:    Invalid argument\n */": "/**\n * @brief 设置 SD Host 插槽时钟是否常开\n *\n * @param[in] slot        SD Host 插槽句柄\n * @param[in] always_on   是否常开\n *\n * @return\n *        - ESP_OK:                 成功\n *        - ESP_ERR_INVALID_ARG:    参数无效\n */",
+    "/**\n * @brief Enable an SD Host slot IO interrupt\n *\n * @param[in] slot        SD Host slot handle\n *\n * @return\n *        - ESP_OK:                 On success\n *        - ESP_ERR_INVALID_ARG:    Invalid argument\n */": "/**\n * @brief 使能 SD Host 插槽 IO 中断\n *\n * @param[in] slot        SD Host 插槽句柄\n *\n * @return\n *        - ESP_OK:                 成功\n *        - ESP_ERR_INVALID_ARG:    参数无效\n */",
+    "/**\n * @brief Wait for IO interrupt event\n *\n * @param[in] slot           SD Host slot handle\n * @param[in] timeout_ticks  Timeout ticks\n *\n * @return\n *        - ESP_OK:                 On success\n *        - ESP_ERR_INVALID_ARG:    Invalid argument\n *        - ESP_ERR_TIMEOUT:        Timeout\n */": "/**\n * @brief 等待 IO 中断事件\n *\n * @param[in] slot           SD Host 插槽句柄\n * @param[in] timeout_ticks  超时 tick 数\n *\n * @return\n *        - ESP_OK:                 成功\n *        - ESP_ERR_INVALID_ARG:    参数无效\n *        - ESP_ERR_TIMEOUT:        超时\n */",
+    "/**\n * @brief Get slot info\n *\n * @param[in]  slot           SD Host slot handle\n * @param[out] info           SD slot info\n *\n * @return\n *        - ESP_OK:                 On success\n *        - ESP_ERR_INVALID_ARG:    Invalid argument\n */": "/**\n * @brief 获取插槽信息\n *\n * @param[in]  slot           SD Host 插槽句柄\n * @param[out] info           SD 插槽信息\n *\n * @return\n *        - ESP_OK:                 成功\n *        - ESP_ERR_INVALID_ARG:    参数无效\n */",
+    "/**\n * @brief Delete an SD Host controller\n *\n * @param[in]  ctlr        SD Host controller handle\n *\n * @return\n *        - ESP_OK:                 On success\n *        - ESP_ERR_INVALID_ARG:    Invalid argument\n *        - ESP_ERR_INVALID_STATE:  Invalid state, there's still registered slot(s)\n */": "/**\n * @brief 删除 SD Host 控制器\n *\n * @param[in]  ctlr        SD Host 控制器句柄\n *\n * @return\n *        - ESP_OK:                 成功\n *        - ESP_ERR_INVALID_ARG:    参数无效\n *        - ESP_ERR_INVALID_STATE:  状态无效，仍有已注册的插槽\n */",
+    "/**\n * @brief SD Host controller handle\n */": "/**\n * @brief SD Host 控制器句柄\n */",
+    "/**\n * @brief SD Host slot handle\n */": "/**\n * @brief SD Host 插槽句柄\n */",
+    "/**\n * @brief SD Host slot configuration\n */": "/**\n * @brief SD Host 插槽配置\n */",
+    "///< Frequency in Hz": "///< 频率（单位：Hz）",
+    "///< Bus width": "///< 总线宽度",
+    "///< Sampling mode, see `sd_sampling_mode_t`": "///< 采样模式，参见 `sd_sampling_mode_t`",
+    "///< Delay phase, see `sdmmc_delay_phase_t`": "///< 延迟相位，参见 `sdmmc_delay_phase_t`",
+    "///< Delay line, see `sdmmc_delay_line_t`": "///< 延迟线，参见 `sdmmc_delay_line_t`",
+    "/**\n * @brief Slot info\n */": "/**\n * @brief 插槽信息\n */",
+    "///< SD mode, see `sd_mode_t`": "///< SD 模式，参见 `sd_mode_t`",
+    "/*---------------------------------------------\n                Event Callbacks\n----------------------------------------------*/": "/*---------------------------------------------\n                事件回调\n----------------------------------------------*/",
+    "/**\n * @brief SD event data structure\n */": "/**\n * @brief SD 事件数据结构\n */",
+    "//leave empty for future-proof": "// 保留为空以供未来扩展",
+    "/**\n * @brief Prototype of SD event callback\n *\n * @param[in] slot      Slot handle\n * @param[in] edata     SD event data\n * @param[in] user_data User registered context, registered when in `esp_isp_register_event_callbacks()`\n *\n * @return Whether a high priority task is woken up by this function\n */": "/**\n * @brief SD 事件回调函数原型\n *\n * @param[in] slot      插槽句柄\n * @param[in] edata     SD 事件数据\n * @param[in] user_data 用户注册的上下文，在 `esp_isp_register_event_callbacks()` 时注册\n *\n * @return 此函数是否唤醒了高优先级任务\n */",
+    "/**\n * @brief SD event callbacks\n */": "/**\n * @brief SD 事件回调函数组\n */",
+    "///< Event callback, invoked when one transaction done": "///< 事件回调，在一次传输完成时调用",
+    "///< Event callback, invoked when IO interrupts": "///< 事件回调，在发生 IO 中断时调用"
+  }
+}

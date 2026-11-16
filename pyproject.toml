@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "esp-idf-zh-headers"
+version = "0.1.0"
+description = "Offline Simplified Chinese Doxygen comment localization toolkit and dictionary for ESP-IDF public API headers (clangd / VS Code Intellisense)."
+readme = "README.md"
+license = { text = "Apache-2.0" }
+requires-python = ">=3.9"
+authors = [
+    { name = "xiaobendaoke" }
+]
+keywords = ["esp32", "esp32s3", "esp-idf", "doxygen", "chinese", "clangd", "localization"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: C",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Embedded Systems",
+    "Topic :: Software Development :: Localization",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/xiaobendaoke/esp-idf-zh-headers"
+Repository = "https://github.com/xiaobendaoke/esp-idf-zh-headers.git"
+Issues = "https://github.com/xiaobendaoke/esp-idf-zh-headers/issues"
+Changelog = "https://github.com/xiaobendaoke/esp-idf-zh-headers/blob/main/CHANGELOG.md"
+
+[project.scripts]
+idf-zh = "idf_zh.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

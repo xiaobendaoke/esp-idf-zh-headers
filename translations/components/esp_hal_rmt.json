@@ -1,0 +1,16 @@
+{
+  "component": "esp_hal_rmt",
+  "headers": [
+    "components/esp_hal_rmt/include/hal/rmt_types.h"
+  ],
+  "entry_count": 7,
+  "entries": {
+    "/**\n * @brief RMT group clock source\n * @note User should select the clock source based on the power and resolution requirement\n */": "/**\n * @brief RMT 组时钟源\n * @note 用户应根据功耗和分辨率需求选择时钟源\n */",
+    "/**\n * @brief The layout of RMT symbol stored in memory, which is decided by the hardware design\n */": "/**\n * @brief 存储在内存中的 RMT 符号布局，由硬件设计决定\n */",
+    "/*!< Duration of level0 */": "/*!< level0 的持续时间 */",
+    "/*!< Level of the first part */": "/*!< 第一部分的电平 */",
+    "/*!< Duration of level1 */": "/*!< level1 的持续时间 */",
+    "/*!< Level of the second part */": "/*!< 第二部分的电平 */",
+    "/*!< Equivalent unsigned value for the RMT symbol */": "/*!< RMT 符号的等效无符号值 */"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "component": "esp_hal_jpeg",
+  "headers": [
+    "components/esp_hal_jpeg/include/hal/jpeg_types.h"
+  ],
+  "entry_count": 29,
+  "entries": {
+    "/// Table type": "/// 表类型",
+    "/// Huffman table destination identifier": "/// 哈夫曼表目标标识符",
+    "// The number of down sampling methods": "// 下采样方法数量",
+    "/**\n * @brief Enum for JPEG codec working mode.\n */": "/**\n * @brief JPEG 编解码器工作模式枚举。\n */",
+    "///< Encode mode": "///< 编码模式",
+    "///< Decode mode": "///< 解码模式",
+    "/**\n * @brief Structure for recording factor of component.\n */": "/**\n * @brief 用于记录分量采样因子的结构体。\n */",
+    "///< horizontal factor": "///< 水平采样因子",
+    "///< vertical factor": "///< 垂直采样因子",
+    "/**\n * @brief Enum for JPEG sampling mode.\n */": "/**\n * @brief JPEG 采样模式枚举。\n */",
+    "///< sample in YUV444": "///< 按 YUV444 格式采样",
+    "///< sample in YUV422": "///< 按 YUV422 格式采样",
+    "///< sample in YUV420": "///< 按 YUV420 格式采样",
+    "/**\n * @brief Structure for huffman information\n */": "/**\n * @brief 哈夫曼表信息结构体\n */",
+    "///< Huffman table id": "///< 哈夫曼表 ID",
+    "///< Huffman table type": "///< 哈夫曼表类型",
+    "///< Information of huffman table": "///< 哈夫曼表信息",
+    "/**\n * @brief Enumeration for jpeg decoder sample methods.\n*/": "/**\n * @brief JPEG 解码器采样方法枚举。\n*/",
+    "/*!< Sample by YUV444 */": "/*!< 按 YUV444 采样 */",
+    "/*!< Sample by YUV422 */": "/*!< 按 YUV422 采样 */",
+    "/*!< Sample by YUV420 */": "/*!< 按 YUV420 采样 */",
+    "/*!< Sample the gray picture */": "/*!< 灰度图像采样 */",
+    "/**\n * @brief JPEG encoder source formats.\n */": "/**\n * @brief JPEG 编码器源图像格式。\n */",
+    "/*!< JPEG encoder source RGB888 */": "/*!< JPEG 编码器源格式 RGB888 */",
+    "/*!< JPEG encoder source YUV422 */": "/*!< JPEG 编码器源格式 YUV422 */",
+    "/*!< JPEG encoder source RGB565 */": "/*!< JPEG 编码器源格式 RGB565 */",
+    "/*!< JPEG encoder source YUV444 */": "/*!< JPEG 编码器源格式 YUV444 */",
+    "/*!< JPEG encoder source YUV420 */": "/*!< JPEG 编码器源格式 YUV420 */",
+    "/*!< JPEG encoder source GRAY */": "/*!< JPEG 编码器源格式 GRAY（灰度） */"
+  }
+}

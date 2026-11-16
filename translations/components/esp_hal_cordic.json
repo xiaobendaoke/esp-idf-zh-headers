@@ -1,0 +1,33 @@
+{
+  "component": "esp_hal_cordic",
+  "headers": [
+    "components/esp_hal_cordic/include/hal/cordic_types.h"
+  ],
+  "entry_count": 24,
+  "entries": {
+    "/**\n * @brief CORDIC group clock source\n */": "/**\n * @brief CORDIC 组时钟源\n */",
+    "/**\n * @brief default type\n */": "/**\n * @brief 默认类型\n */",
+    "/**\n * @brief Input buffer descriptor for CORDIC operations\n */": "/**\n * @brief CORDIC 运算的输入缓冲区描述符\n */",
+    "/*!< Pointer to input data argument 1 buffer */": "/*!< 指向输入数据参数 1 缓冲区的指针 */",
+    "/*!< Pointer to input data argument 2 buffer (can be NULL for single argument functions) */": "/*!< 指向输入数据参数 2 缓冲区的指针（对于单参数函数可以为 NULL） */",
+    "/**\n * @brief Output buffer descriptor for CORDIC operations\n */": "/**\n * @brief CORDIC 运算的输出缓冲区描述符\n */",
+    "/*!< Pointer to output result 1 buffer */": "/*!< 指向输出结果 1 缓冲区的指针 */",
+    "/*!< Pointer to output result 2 buffer (can be NULL for single result) */": "/*!< 指向输出结果 2 缓冲区的指针（对于单结果函数可以为 NULL） */",
+    "/**\n * @brief CORDIC calculation function type\n */": "/**\n * @brief CORDIC 计算函数类型\n */",
+    "///< Cosine function (can have both cos, sin results)": "///< 余弦函数（可同时输出 cos、sin 结果）",
+    "///< Sine function (can have both sin, cos results)": "///< 正弦函数（可同时输出 sin、cos 结果）",
+    "///< Phase function (requires two arguments) (can have both phase, modulus results)": "///< 相位函数（需要两个参数）（可同时输出 phase、modulus 结果）",
+    "///< Modulus function (requires two arguments) (can have both phase, modulus results)": "///< 模长函数（需要两个参数）（可同时输出 phase、modulus 结果）",
+    "///< Arctangent function": "///< 反正切函数",
+    "///< Hyperbolic cosine function (can have both cosh, sinh results)": "///< 双曲余弦函数（可同时输出 cosh、sinh 结果）",
+    "///< Hyperbolic sine function (can have both sinh, cosh results)": "///< 双曲正弦函数（可同时输出 sinh、cosh 结果）",
+    "///< Hyperbolic arctangent function": "///< 反双曲正切函数",
+    "///< Natural logarithm function": "///< 自然对数函数",
+    "///< Square root function": "///< 平方根函数",
+    "///< Maximum function type (for boundary checking)": "///< 最大函数类型（用于边界检查）",
+    "/**\n * @brief CORDIC data format size\n */": "/**\n * @brief CORDIC 数据格式大小\n */",
+    "///< Q15 format: 16-bit fixed-point (range: -1.0 to 1.0)": "///< Q15 格式：16 位定点数（范围：-1.0 至 1.0）",
+    "///< Q31 format: 32-bit fixed-point (range: -1.0 to 1.0)": "///< Q31 格式：32 位定点数（范围：-1.0 至 1.0）",
+    "///< Maximum size type (for boundary checking)": "///< 最大格式大小类型（用于边界检查）"
+  }
+}

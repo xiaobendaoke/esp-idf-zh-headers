@@ -1,0 +1,32 @@
+{
+  "component": "esp_hal_gpspi",
+  "headers": [
+    "components/esp_hal_gpspi/include/hal/spi_types.h"
+  ],
+  "entry_count": 23,
+  "entries": {
+    "/**\n * @brief General purpose SPI Host Controller ID.\n */": "/**\n * @brief 通用 SPI 主机控制器 ID。\n */",
+    "///< invalid host value": "///< 无效的主机值",
+    "/**\n * @brief Type of SPI clock source.\n */": "/**\n * @brief SPI 时钟源类型。\n */",
+    "/// SPI Events": "/// SPI 事件",
+    "/* Slave HD Only */": "/* 仅从机半双工模式（Slave HD） */",
+    "///< The buffer has sent data to master.": "///< 缓冲区已向主机发送数据。",
+    "///< The buffer has received data from master.": "///< 缓冲区已从主机接收数据。",
+    "///< Slave has loaded its TX data buffer to the hardware (DMA).": "///< 从机已将其 TX 数据缓冲区加载到硬件（DMA）。",
+    "///< Master has received certain number of the data, the number is determined by Master.": "///< 主机已接收一定数量的数据，数据量由主机决定。",
+    "///< Slave has loaded its RX data buffer to the hardware (DMA).": "///< 从机已将其 RX 数据缓冲区加载到硬件（DMA）。",
+    "///< Slave has received certain number of data from master, the number is determined by Master.": "///< 从机已从主机接收一定数量的数据，数据量由主机决定。",
+    "///< Received CMD9 from master.": "///< 已从主机收到 CMD9。",
+    "///< Received CMDA from master.": "///< 已从主机收到 CMDA。",
+    "/* Common Event */": "/* 通用事件 */",
+    "///< A transaction has done": "///< 一次传输已完成",
+    "/**\n * @brief Line mode of SPI transaction phases: CMD, ADDR, DOUT/DIN.\n */": "/**\n * @brief SPI 传输阶段（CMD、ADDR、DOUT/DIN）的线模式。\n */",
+    "///< The line width of command phase, e.g. 2-line-cmd-phase.": "///< 命令阶段的线宽，例如 2 线命令阶段。",
+    "///< The line width of address phase, e.g. 1-line-addr-phase.": "///< 地址阶段的线宽，例如 1 线地址阶段。",
+    "///< The line width of data phase, e.g. 4-line-data-phase.": "///< 数据阶段的线宽，例如 4 线数据阶段。",
+    "/**\n * @brief SPI command.\n */": "/**\n * @brief SPI 命令。\n */",
+    "/**\n * @brief SPI master RX sample point mode configuration\n */": "/**\n * @brief SPI 主机 RX 采样点模式配置\n */",
+    "///< Data sampling point at 50% cycle delayed then standard timing, (default).": "///< 数据采样点相比标准时序延迟 50% 个周期（默认）。",
+    "///< Data sampling point follows standard SPI timing in master mode": "///< 主机模式下数据采样点遵循标准 SPI 时序"
+  }
+}

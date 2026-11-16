@@ -1,0 +1,40 @@
+{
+  "component": "perfmon",
+  "headers": [
+    "components/perfmon/include/xtensa_perfmon_access.h",
+    "components/perfmon/include/xtensa_perfmon_apis.h",
+    "components/perfmon/include/xtensa_perfmon_masks.h"
+  ],
+  "entry_count": 29,
+  "entries": {
+    "/**\n * @brief      Init Performance Monitoor\n *\n * Initialize performance monitor register with define values\n *\n * @param[in] id: performance counter number\n * @param[in] select: select value from PMCTRLx register\n * @param[in] mask: mask value from PMCTRLx register\n * @param[in] kernelcnt: kernelcnt value from PMCTRLx register\n * @param[in] tracelevel: tracelevel value from PMCTRLx register\n *\n * @return\n *      - ESP_OK on success\n *      - ESP_ERR_INVALID_ARG if one of the arguments is not correct\n */": "/**\n * @brief      初始化性能监视器（Performance Monitor）\n *\n * 使用指定值初始化性能监视器寄存器\n *\n * @param[in] id: 性能计数器编号\n * @param[in] select: 来自 PMCTRLx 寄存器的 select 值\n * @param[in] mask: 来自 PMCTRLx 寄存器的 mask 值\n * @param[in] kernelcnt: 来自 PMCTRLx 寄存器的 kernelcnt 值\n * @param[in] tracelevel: 来自 PMCTRLx 寄存器的 tracelevel 值\n *\n * @return\n *      - 成功返回 ESP_OK\n *      - 若任一参数不正确，返回 ESP_ERR_INVALID_ARG\n */",
+    "/**\n * @brief      Reset PM counter\n *\n * Reset PM counter. Writes 0 to the PMx register.\n *\n * @param[in] id: performance counter number\n *\n * @return\n *      - ESP_OK on success\n *      - ESP_ERR_INVALID_ARG if id out of range\n */": "/**\n * @brief      复位 PM 计数器\n *\n * 复位 PM 计数器。向 PMx 寄存器写入 0。\n *\n * @param[in] id: 性能计数器编号\n *\n * @return\n *      - 成功返回 ESP_OK\n *      - 若 id 超出范围，返回 ESP_ERR_INVALID_ARG\n */",
+    "/**\n * @brief      Start PM counters\n *\n * Start all PM counters synchronously. Write 1 to the PGM register\n */": "/**\n * @brief      启动 PM 计数器\n *\n * 同步启动所有 PM 计数器。向 PGM 寄存器写入 1\n */",
+    "/**\n * @brief      Stop PM counters\n *\n * Stop all PM counters synchronously. Write 0 to the PGM register\n */": "/**\n * @brief      停止 PM 计数器\n *\n * 同步停止所有 PM 计数器。向 PGM 寄存器写入 0\n */",
+    "/**\n * @brief      Read PM counter\n *\n * Read value of defined PM counter.\n *\n * @param[in] id: performance counter number\n *\n * @return\n *      - Performance counter value\n */": "/**\n * @brief      读取 PM 计数器\n *\n * 读取指定 PM 计数器的值。\n *\n * @param[in] id: 性能计数器编号\n *\n * @return\n *      - 性能计数器值\n */",
+    "/**\n * @brief      Read PM overflow state\n *\n * Read overflow value of defined PM counter.\n *\n * @param[in] id: performance counter number\n *\n * @return\n *      - ESP_OK if there is no overflow (overflow = 0)\n *      - ESP_FAIL if overflow occure (overflow = 1)\n */": "/**\n * @brief      读取 PM 溢出状态\n *\n * 读取指定 PM 计数器的溢出值。\n *\n * @param[in] id: 性能计数器编号\n *\n * @return\n *      - 若未发生溢出（overflow = 0），返回 ESP_OK\n *      - 若发生溢出（overflow = 1），返回 ESP_FAIL\n */",
+    "/**\n * @brief      Dump PM values\n *\n * Dump all PM register to the console.\n *\n */": "/**\n * @brief      输出 PM 值\n *\n * 将所有 PM 寄存器的值输出到控制台。\n *\n */",
+    "/**\n * @brief Performance monitor configuration structure\n *\n * Structure to configure performance counter to measure dedicated function\n */": "/**\n * @brief 性能监视器配置结构体\n *\n * 用于配置性能计数器以测量专用函数的结构体\n */",
+    "/*!< how much times function will be called before the callback will be repeated */": "/*!< 重复调用回调函数之前，目标函数将被调用的次数 */",
+    "/*!<  Difference between min and max counter number 0..1, 0 - no difference, 1 - not used */": "/*!< 最小计数器编号与最大计数器编号之间的差值 0..1，0 - 无差值，1 - 未使用 */",
+    "/*!<  This pointer will be passed to the call_function as a parameter */": "/*!< 此指针将作为参数传递给 call_function */",
+    "/*!< pointer to the function that have to be called */": "/*!< 指向待调用函数的指针 */",
+    "/*!< pointer to the function that will be called with result parameters */": "/*!< 指向将随结果参数一起被调用的函数的指针 */",
+    "/*!<  parameter that will be passed to the callback */": "/*!< 将传递给回调函数的参数 */",
+    "/*!<  trace level for all counters.\n                                  In case of negative value, the filter will be ignored.\n                                  If it's >=0, then the perfmon will count only when interrupt level > tracelevel. It's useful to monitor interrupts. */": "/*!< 所有计数器的跟踪级别（trace level）。\n                                  若为负值，则忽略该过滤器。\n                                  若 >= 0，则 perfmon 仅在中断级别 > tracelevel 时进行计数。这在监视中断时非常有用。 */",
+    "/*!<  amount of counter in the list */": "/*!< 列表中计数器的数量 */",
+    "/*!<  list of the select/mask parameters */": "/*!< select/mask 参数列表 */",
+    "/**\n * @brief      Execute PM\n *\n * Execute performance counter for dedicated function with defined parameters\n *\n * @param[in] config: pointer to the configuration structure\n *\n * @return\n *      - ESP_OK if no errors\n *      - ESP_ERR_INVALID_ARG if one of the required parameters not defined\n *      - ESP_FAIL - counter overflow\n */": "/**\n * @brief      执行性能监视（PM）\n *\n * 使用定义的参数针对指定函数执行性能计数器测量\n *\n * @param[in] config: 指向配置结构体的指针\n *\n * @return\n *      - 若无错误则返回 ESP_OK\n *      - 若未定义某个必需参数，返回 ESP_ERR_INVALID_ARG\n *      - ESP_FAIL - 计数器溢出\n */",
+    "/**\n * @brief      Dump PM results\n *\n * Callback to dump perfmon result to a FILE* stream specified in\n * perfmon_config_t::callback_params. If callback_params is set to NULL, will print to stdout\n *\n * @param[in] params:   used parameters passed from configuration (callback_params).\n *                      This parameter is expected to be a FILE* handle, where data will be stored.\n *                      If this parameter NULL, then data will be stored to the stdout.\n * @param[in] select:   select value for current counter\n * @param[in] mask:     mask value for current counter\n * @param[in] value:    counter value for current counter\n *\n */": "/**\n * @brief      输出 PM 结果\n *\n * 回调函数，用于将 perfmon 结果输出到 perfmon_config_t::callback_params 中指定的 FILE* 流。\n * 如果 callback_params 设为 NULL，则将打印到 stdout\n *\n * @param[in] params:   从配置（callback_params）传入的用户参数。\n *                      此参数应为一个 FILE* 句柄，用于存储数据。\n *                      如果此参数为 NULL，则数据将输出到 stdout。\n * @param[in] select:   当前计数器的 select 值\n * @param[in] mask:     当前计数器的 mask 值\n * @param[in] value:    当前计数器的计数值\n *\n */",
+    "/**\n * @brief Description for select parameter\n *\n * Structure defines description for different select values for performance counters\n */": "/**\n * @brief select 参数说明\n *\n * 定义性能计数器不同 select 值说明的结构体\n */",
+    "/*!<  Selected counter */": "/*!< 所选计数器 */",
+    "/*!<  Description for selected counter */": "/*!< 所选计数器的说明 */",
+    "/**\n * @brief Description for mask parameter\n *\n * Structure defines description for different select and mask values for performance counters\n */": "/**\n * @brief mask 参数说明\n *\n * 定义性能计数器不同 select 和 mask 值说明的结构体\n */",
+    "/*!<  Selected mask for counter */": "/*!< 所选计数器掩码（mask） */",
+    "/*!<  Description for selected mask */": "/*!< 所选掩码的说明 */",
+    "// Maximum amount of performance counter events": "// 性能计数器事件的最大数量",
+    "/**\n * @brief Select value description table\n *\n * Table contains description for different 'select' values for performance counter\n */": "/**\n * @brief select 值说明表\n *\n * 包含性能计数器不同 'select' 值说明的表格\n */",
+    "/**\n * @brief Mask value description table\n *\n * Table contains description for different 'select' and 'mask' values for performance counter\n */": "/**\n * @brief mask 值说明表\n *\n * 包含性能计数器不同 'select' 和 'mask' 值说明的表格\n */",
+    "/**\n * @brief All available counters\n *\n * Table contains all available counters\n */": "/**\n * @brief 所有可用计数器\n *\n * 包含所有可用计数器的表格\n */"
+  }
+}

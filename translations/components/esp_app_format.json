@@ -1,0 +1,29 @@
+{
+  "component": "esp_app_format",
+  "headers": [
+    "components/esp_app_format/include/esp_app_desc.h"
+  ],
+  "entry_count": 20,
+  "entries": {
+    "/*!< The magic word for the esp_app_desc structure that is in DROM. */": "/*!< 位于 DROM 中的 esp_app_desc 结构体的魔数（magic word）。 */",
+    "/**\n * @brief Description about application.\n */": "/**\n * @brief 应用程序描述信息。\n */",
+    "/*!< Magic word ESP_APP_DESC_MAGIC_WORD */": "/*!< 魔数 ESP_APP_DESC_MAGIC_WORD */",
+    "/*!< Secure version */": "/*!< 安全版本号 */",
+    "/*!< reserv1 */": "/*!< 保留字段 1 */",
+    "/*!< Application version */": "/*!< 应用程序版本 */",
+    "/*!< Project name */": "/*!< 项目名称 */",
+    "/*!< Compile time */": "/*!< 编译时间 */",
+    "/*!< Compile date*/": "/*!< 编译日期 */",
+    "/*!< Version IDF */": "/*!< ESP-IDF 版本 */",
+    "/*!< sha256 of elf file */": "/*!< ELF 文件的 SHA256 摘要 */",
+    "/*!< Minimal eFuse block revision supported by image, in format: major * 100 + minor */": "/*!< 镜像支持的最小 eFuse 块修订版本，格式为：major * 100 + minor */",
+    "/*!< Maximal eFuse block revision supported by image, in format: major * 100 + minor */": "/*!< 镜像支持的最大 eFuse 块修订版本，格式为：major * 100 + minor */",
+    "/*!< MMU page size in log base 2 format */": "/*!< 以 log2 格式表示的 MMU 页大小 */",
+    "/*!< SPI flash mode as per CONFIG_ESPTOOLPY_FLASHMODE_VAL for compatibility check during OTA */": "/*!< 符合 CONFIG_ESPTOOLPY_FLASHMODE_VAL 的 SPI Flash 模式，用于 OTA 期间的兼容性检查 */",
+    "/*!< reserv3 */": "/*!< 保留字段 3 */",
+    "/*!< reserv2 */": "/*!< 保留字段 2 */",
+    "/**\n * @brief   Return esp_app_desc structure. This structure includes app version.\n *\n * Return description for running app.\n * @return Pointer to esp_app_desc structure.\n */": "/**\n * @brief   返回 esp_app_desc 结构体。该结构体包含应用程序版本信息。\n *\n * 返回正在运行的应用程序的描述信息。\n * @return 指向 esp_app_desc 结构体的指针。\n */",
+    "/**\n * @brief   Fill the provided buffer with SHA256 of the ELF file, formatted as hexadecimal, null-terminated.\n * If the buffer size is not sufficient to fit the entire SHA256 in hex plus a null terminator,\n * the largest possible number of bytes will be written followed by a null.\n * @param dst   Destination buffer\n * @param size  Size of the buffer\n * @return      Number of bytes written to dst (including null terminator)\n */": "/**\n * @brief   将 ELF 文件的 SHA256 格式化为以空字符结尾的十六进制字符串并填充到提供的缓冲区中。\n * 如果缓冲区大小不足以容纳完整的十六进制 SHA256 及空终止符，\n * 将写入尽可能多的字节并附加一个空终止符。\n * @param dst   目标缓冲区\n * @param size  缓冲区大小\n * @return      写入 dst 的字节数（包含空终止符）\n */",
+    "/**\n * @brief   Return SHA256 of the ELF file which is already formatted as hexadecimal, null-terminated included.\n * Can be used in panic handler or core dump during when cache is disabled.\n * The length is defined by CONFIG_APP_RETRIEVE_LEN_ELF_SHA option.\n * @return  Hexadecimal SHA256 string\n */": "/**\n * @brief   返回已格式化为以空字符结尾的十六进制字符串的 ELF 文件 SHA256。\n * 可在关闭 Cache 时的 panic 处理程序或 core dump 期间使用。\n * 长度由 CONFIG_APP_RETRIEVE_LEN_ELF_SHA 选项定义。\n * @return  十六进制 SHA256 字符串\n */"
+  }
+}

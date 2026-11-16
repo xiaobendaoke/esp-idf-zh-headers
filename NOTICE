@@ -1,0 +1,30 @@
+ESP-IDF ZH Headers (ESP-IDF 公开 API 头文件简体中文注释汉化工具包)
+========================================================================
+
+This project is an independent, unofficial community localization toolkit and
+is NOT affiliated with, endorsed by, or sponsored by Espressif Systems.
+
+Upstream Attribution & Licenses
+-------------------------------
+1. Espressif IoT Development Framework (ESP-IDF)
+   - Repository: https://github.com/espressif/esp-idf
+   - Copyright: 2015-2026 Espressif Systems (Shanghai) CO LTD
+   - License: Apache License 2.0
+   - The original English Doxygen documentation strings matched and translated
+     in `translations/components/*.json` are derived from the public API header
+     comments of ESP-IDF (baseline v6.1, commit `fff9895c82d744c7237be8847347bdd1b07c6643`).
+
+2. Third-Party Components Bundled in ESP-IDF Public Headers
+   - FreeRTOS Kernel (`translations/components/freertos.json`):
+     Original English API documentation Copyright Amazon.com, Inc. or its
+     affiliates, licensed under the MIT License.
+   - LwIP / mbedTLS / Bluedroid / NimBLE / FatFs / SPIFFS:
+     Original English API documentation strings remain subject to their
+     respective upstream permissive open-source licenses as documented in
+     ESP-IDF's root `COPYRIGHT` file.
+
+Note on Header SPDX Tags
+------------------------
+When `idf-zh apply` patches headers locally in a user's ESP-IDF installation,
+all original `SPDX-FileCopyrightText` and `SPDX-License-Identifier` headers in
+every `.h` file are strictly preserved untouched.

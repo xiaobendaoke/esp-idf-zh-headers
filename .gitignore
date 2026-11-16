@@ -1,0 +1,20 @@
+# Python bytecode & packaging artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+build/
+dist/
+*.egg-info/
+.eggs/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Local SDK backup snapshots created by `apply`
+.local_backups/
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

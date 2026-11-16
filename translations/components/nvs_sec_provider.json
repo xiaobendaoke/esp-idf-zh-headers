@@ -1,0 +1,26 @@
+{
+  "component": "nvs_sec_provider",
+  "headers": [
+    "components/nvs_sec_provider/include/nvs_sec_provider.h"
+  ],
+  "entry_count": 17,
+  "entries": {
+    "/*!< Starting number of error codes */": "/*!< 错误代码的起始编号 */",
+    "/*!< HMAC Key required to generate the NVS encryption keys not found */": "/*!< 未找到生成 NVS 加密密钥所需的 HMAC 密钥 */",
+    "/*!< Provided eFuse block for HMAC key generation is already in use */": "/*!< 提供用于生成 HMAC 密钥的 eFuse 块已被占用 */",
+    "/*!< Failed to generate/write the HMAC key to eFuse */": "/*!< 生成/写入 HMAC 密钥到 eFuse 失败 */",
+    "/*!< Failed to derive the NVS encryption keys based on the HMAC-based scheme */": "/*!< 无法基于 HMAC 方案派生 NVS 加密密钥 */",
+    "/**\n * @brief NVS Encryption Keys Protection Scheme\n */": "/**\n * @brief NVS 加密密钥保护方案\n */",
+    "/*!<  Protect NVS encryption keys using Flash Encryption */": "/*!< 使用 Flash 加密（Flash Encryption）保护 NVS 加密密钥 */",
+    "/*!<  Protect NVS encryption keys using HMAC peripheral */": "/*!< 使用 HMAC 外设保护 NVS 加密密钥 */",
+    "/**\n * @brief Flash encryption-based scheme specific configuration data\n */": "/**\n * @brief 基于 Flash 加密的方案特定配置数据\n */",
+    "/*!<  Partition of subtype `nvs_keys` holding the NVS encryption keys */": "/*!< 保存 NVS 加密密钥的 `nvs_keys` 子类型分区 */",
+    "/**\n * @brief Helper for populating the Flash encryption-based scheme specific configuration data\n */": "/**\n * @brief 用于填充基于 Flash 加密的方案特定配置数据的辅助宏\n */",
+    "/**\n * @brief HMAC-based scheme specific configuration data\n */": "/**\n * @brief 基于 HMAC 的方案特定配置数据\n */",
+    "/*!<  HMAC Key ID used for generating the NVS encryption keys */": "/*!< 用于生成 NVS 加密密钥的 HMAC 密钥 ID */",
+    "/**\n * @brief Helper for populating the HMAC-based scheme specific configuration data\n */": "/**\n * @brief 用于填充基于 HMAC 的方案特定配置数据的辅助宏\n */",
+    "/**\n * @brief Register the Flash-Encryption based scheme for NVS Encryption\n *\n * @param[in]  sec_scheme_cfg          Security scheme specific configuration data\n * @param[out] sec_scheme_handle_out   Security scheme specific configuration handle\n *\n * @return\n *      - ESP_OK, if `sec_scheme_handle_out` was populated successfully with the scheme configuration;\n *      - ESP_ERR_INVALID_ARG, if `sec_scheme_cfg` is NULL;\n *      - ESP_ERR_NO_MEM, No memory for the scheme-specific handle `sec_scheme_handle_out`\n *      - ESP_ERR_NOT_FOUND, if no `nvs_keys` partition is found\n */": "/**\n * @brief 为 NVS 加密注册基于 Flash 加密的方案\n *\n * @param[in]  sec_scheme_cfg          安全方案特定的配置数据\n * @param[out] sec_scheme_handle_out   安全方案特定的配置句柄\n *\n * @return\n *      - ESP_OK，如果已成功使用方案配置填充 `sec_scheme_handle_out`；\n *      - ESP_ERR_INVALID_ARG，如果 `sec_scheme_cfg` 为 NULL；\n *      - ESP_ERR_NO_MEM，没有足够的内存用于方案特定句柄 `sec_scheme_handle_out`\n *      - ESP_ERR_NOT_FOUND，如果未找到 `nvs_keys` 分区\n */",
+    "/**\n * @brief Register the HMAC-based scheme for NVS Encryption\n *\n * @param[in]  sec_scheme_cfg          Security scheme specific configuration data\n * @param[out] sec_scheme_handle_out   Security scheme specific configuration handle\n *\n * @return\n *      - ESP_OK, if `sec_scheme_handle_out` was populated successfully with the scheme configuration;\n *      - ESP_ERR_INVALID_ARG, if `sec_scheme_cfg` is NULL;\n *      - ESP_ERR_NO_MEM, No memory for the scheme-specific handle `sec_scheme_handle_out`\n */": "/**\n * @brief 为 NVS 加密注册基于 HMAC 的方案\n *\n * @param[in]  sec_scheme_cfg          安全方案特定的配置数据\n * @param[out] sec_scheme_handle_out   安全方案特定的配置句柄\n *\n * @return\n *      - ESP_OK，如果已成功使用方案配置填充 `sec_scheme_handle_out`；\n *      - ESP_ERR_INVALID_ARG，如果 `sec_scheme_cfg` 为 NULL；\n *      - ESP_ERR_NO_MEM，没有足够的内存用于方案特定句柄 `sec_scheme_handle_out`\n */",
+    "/**\n * @brief Deregister the NVS encryption scheme registered with the given handle\n *\n * @param[in] sec_scheme_handle  Security scheme specific configuration handle\n\n * @return\n *      - ESP_OK, if the scheme registered with `sec_scheme_handle` was deregistered successfully\n *      - ESP_ERR_INVALID_ARG, if `sec_scheme_handle` is NULL;\n */": "/**\n * @brief 注销使用给定句柄注册的 NVS 加密方案\n *\n * @param[in] sec_scheme_handle  安全方案特定的配置句柄\n\n * @return\n *      - ESP_OK，如果使用 `sec_scheme_handle` 注册的方案已成功注销\n *      - ESP_ERR_INVALID_ARG，如果 `sec_scheme_handle` 为 NULL；\n */"
+  }
+}

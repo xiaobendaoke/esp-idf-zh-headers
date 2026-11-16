@@ -1,0 +1,27 @@
+{
+  "component": "esp_hal_pcnt",
+  "headers": [
+    "components/esp_hal_pcnt/include/hal/pcnt_types.h"
+  ],
+  "entry_count": 18,
+  "entries": {
+    "/**\n * @brief PCNT clock source\n * @note User should select the clock source based on the power and resolution requirement\n */": "/**\n * @brief PCNT 时钟源\n * @note 用户应根据功耗和分辨率需求选择时钟源\n */",
+    "/**\n * @brief Default type\n */": "/**\n * @brief 默认类型\n */",
+    "/**\n * @brief PCNT channel action on control level\n */": "/**\n * @brief PCNT 通道在控制电平下的动作\n */",
+    "/*!< Keep current count mode */": "/*!< 保持当前计数模式 */",
+    "/*!< Invert current count mode (increase -> decrease, decrease -> increase) */": "/*!< 反转当前计数模式（递增 -> 递减，递减 -> 递增） */",
+    "/*!< Hold current count value */": "/*!< 保持当前计数值 */",
+    "/**\n * @brief PCNT channel action on signal edge\n */": "/**\n * @brief PCNT 通道在信号边沿上的动作\n */",
+    "/*!< Increase count value */": "/*!< 递增计数值 */",
+    "/*!< Decrease count value */": "/*!< 递减计数值 */",
+    "/**\n * @brief PCNT unit zero cross mode\n */": "/**\n * @brief PCNT 单元过零模式\n */",
+    "/*!< start from positive value, end to zero, i.e. +N->0 */": "/*!< 从正值开始，到零结束，即 +N->0 */",
+    "/*!< start from negative value, end to zero, i.e. -N->0 */": "/*!< 从负值开始，到零结束，即 -N->0 */",
+    "/*!< start from negative value, end to positive value, i.e. -N->+M */": "/*!< 从负值开始，到正值结束，即 -N->+M */",
+    "/*!< start from positive value, end to negative value, i.e. +N->-M */": "/*!< 从正值开始，到负值结束，即 +N->-M */",
+    "/*!< invalid zero cross mode */": "/*!< 无效的过零模式 */",
+    "/**\n * @brief PCNT step direction\n */": "/**\n * @brief PCNT 步进方向\n */",
+    "/*!< step forward, e.g., [N]->[N+1]->[N+2]->... */": "/*!< 向前步进，例如 [N]->[N+1]->[N+2]->... */",
+    "/*!< step backward, e.g., [N]->[N-1]->[N-2]->... */": "/*!< 向后步进，例如 [N]->[N-1]->[N-2]->... */"
+  }
+}

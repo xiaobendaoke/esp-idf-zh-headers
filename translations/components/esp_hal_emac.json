@@ -1,0 +1,35 @@
+{
+  "component": "esp_hal_emac",
+  "headers": [
+    "components/esp_hal_emac/include/hal/eth_types.h"
+  ],
+  "entry_count": 26,
+  "entries": {
+    "/**\n* @brief Ethernet interface\n*\n*/": "/**\n* @brief 以太网接口\n*\n*/",
+    "/*!< Reduced Media Independent Interface */": "/*!< 简化媒体独立接口（RMII） */",
+    "/*!< Media Independent Interface */": "/*!< 媒体独立接口（MII） */",
+    "/*!< Reduced Gigabit Media Independent Interface */": "/*!< 简化千兆媒体独立接口（RGMII） */",
+    "/**\n* @brief Ethernet link status\n*\n*/": "/**\n* @brief 以太网链路状态\n*\n*/",
+    "/*!< Ethernet link is up */": "/*!< 以太网链路已连接（up） */",
+    "/*!< Ethernet link is down */": "/*!< 以太网链路已断开（down） */",
+    "/**\n* @brief Ethernet speed\n*\n*/": "/**\n* @brief 以太网速率\n*\n*/",
+    "/*!< Ethernet speed is 10Mbps */": "/*!< 以太网速率为 10Mbps */",
+    "/*!< Ethernet speed is 100Mbps */": "/*!< 以太网速率为 100Mbps */",
+    "/*!< Ethernet speed is 1000Mbps */": "/*!< 以太网速率为 1000Mbps */",
+    "/*!< Max speed mode (for checking purpose) */": "/*!< 最大速率模式（用于检查校验） */",
+    "/**\n* @brief Ethernet duplex mode\n*\n*/": "/**\n* @brief 以太网双工模式\n*\n*/",
+    "/*!< Ethernet is in half duplex */": "/*!< 以太网处于半双工模式 */",
+    "/*!< Ethernet is in full duplex */": "/*!< 以太网处于全双工模式 */",
+    "/**\n* @brief Ethernet Checksum\n*/": "/**\n* @brief 以太网校验和\n*/",
+    "/*!< Ethernet checksum calculate by software */": "/*!< 由软件计算以太网校验和 */",
+    "/*!< Ethernet checksum calculate by hardware */": "/*!< 由硬件计算以太网校验和 */",
+    "/**\n* @brief Internal ethernet EMAC's DMA available burst sizes\n*/": "/**\n* @brief 内部以太网 EMAC 的 DMA 可用突发传输大小\n*/",
+    "/**\n * @brief EMAC System timestamp update update method\n *\n */": "/**\n * @brief EMAC 系统时间戳更新方法\n *\n */",
+    "/*!< EMAC System timestamp update using the Coarse method */": "/*!< 使用粗调（Coarse）方法更新 EMAC 系统时间戳 */",
+    "/*!< EMAC System timestamp update using the Fine method */": "/*!< 使用微调（Fine）方法更新 EMAC 系统时间戳 */",
+    "/**\n * @brief EMAC System Timestamp Rollover\n *\n */": "/**\n * @brief EMAC 系统时间戳回绕方式\n *\n */",
+    "/*!< Digital - subseconds register rolls over after 999999999 value (1 nanosecond accuracy) */": "/*!< 数字模式 - 亚秒寄存器在 999999999 后回绕（1 纳秒精度） */",
+    "/*!< Binary - subseconds register rolls over after 0x7FFFFFFF value  */": "/*!< 二进制模式 - 亚秒寄存器在 0x7FFFFFFF 后回绕 */",
+    "/**\n * @brief EMAC System dedicated pad identifier\n *\n */": "/**\n * @brief EMAC 系统专用焊盘（pad）标识符\n *\n */"
+  }
+}

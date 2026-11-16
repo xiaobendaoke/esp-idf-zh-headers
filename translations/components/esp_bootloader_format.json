@@ -1,0 +1,18 @@
+{
+  "component": "esp_bootloader_format",
+  "headers": [
+    "components/esp_bootloader_format/include/esp_bootloader_desc.h"
+  ],
+  "entry_count": 9,
+  "entries": {
+    "/*!< The magic byte for the esp_bootloader_desc structure that is in DRAM. */": "/*!< 位于 DRAM 中的 esp_bootloader_desc 结构体的魔数（magic byte）。 */",
+    "/**\n * @brief Bootloader description structure\n */": "/**\n * @brief Bootloader 描述信息结构体\n */",
+    "/*!< Magic byte ESP_BOOTLOADER_DESC_MAGIC_BYTE */": "/*!< 魔数 ESP_BOOTLOADER_DESC_MAGIC_BYTE */",
+    "/*!< reserved for IDF */": "/*!< 为 IDF 保留 */",
+    "/*!< The version used by bootloader anti-rollback feature */": "/*!< Bootloader 防回滚功能所使用的版本号 */",
+    "/*!< Bootloader version */": "/*!< Bootloader 版本 */",
+    "/*!< Version IDF */": "/*!< ESP-IDF 版本 */",
+    "/*!< Compile date and time*/": "/*!< 编译日期与时间 */",
+    "/**\n * @brief   Return esp_bootloader_desc structure.\n *\n * Intended for use by the bootloader.\n * @return Pointer to esp_bootloader_desc structure.\n */": "/**\n * @brief   返回 esp_bootloader_desc 结构体。\n *\n * 供 Bootloader 使用。\n * @return 指向 esp_bootloader_desc 结构体的指针。\n */"
+  }
+}

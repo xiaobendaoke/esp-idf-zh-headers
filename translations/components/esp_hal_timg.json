@@ -1,0 +1,24 @@
+{
+  "component": "esp_hal_timg",
+  "headers": [
+    "components/esp_hal_timg/include/hal/timer_types.h"
+  ],
+  "entry_count": 15,
+  "entries": {
+    "/**\n * @brief GPTimer clock source\n * @note User should select the clock source based on the power and resolution requirement\n */": "/**\n * @brief GPTimer 时钟源\n * @note 用户应根据功耗和分辨率需求选择时钟源\n */",
+    "/**\n * @brief Default type\n */": "/**\n * @brief 默认类型\n */",
+    "/**\n * @brief GPTimer count direction\n */": "/**\n * @brief GPTimer 计数方向\n */",
+    "/*!< Decrease count value */": "/*!< 递减计数值 */",
+    "/*!< Increase count value */": "/*!< 递增计数值 */",
+    "/**\n * @brief GPTimer specific tasks that supported by the ETM module\n */": "/**\n * @brief ETM 模块支持的 GPTimer 特定任务\n */",
+    "/*!< Start the counter */": "/*!< 启动计数器 */",
+    "/*!< Stop the counter */": "/*!< 停止计数器 */",
+    "/*!< Enable the alarm */": "/*!< 使能警报（alarm） */",
+    "/*!< Reload preset value into counter */": "/*!< 将预设值重新加载到计数器 */",
+    "/*!< Capture current count value into specific register */": "/*!< 将当前计数值捕获到特定寄存器 */",
+    "/*!< Maximum number of tasks */": "/*!< 任务最大数量 */",
+    "/**\n * @brief GPTimer specific events that supported by the ETM module\n */": "/**\n * @brief ETM 模块支持的 GPTimer 特定事件\n */",
+    "/*!< Count value matches the alarm target value */": "/*!< 计数值与警报目标值匹配 */",
+    "/*!< Maximum number of events */": "/*!< 事件最大数量 */"
+  }
+}

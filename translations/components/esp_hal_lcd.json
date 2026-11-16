@@ -1,0 +1,26 @@
+{
+  "component": "esp_hal_lcd",
+  "headers": [
+    "components/esp_hal_lcd/include/hal/lcd_types.h"
+  ],
+  "entry_count": 17,
+  "entries": {
+    "/**\n * @brief LCD clock source\n */": "/**\n * @brief LCD 时钟源\n */",
+    "/**\n * @brief RGB data endian\n */": "/**\n * @brief RGB 数据字节序\n */",
+    "/*!< RGB data endian: MSB first */": "/*!< RGB 数据字节序：MSB 优先（大端序） */",
+    "/*!< RGB data endian: LSB first */": "/*!< RGB 数据字节序：LSB 优先（小端序） */",
+    "/**\n * @brief LCD color type, in FourCC format\n */": "/**\n * @brief LCD 颜色类型（FourCC 格式）\n */",
+    "///< 8-bit gray scale": "///< 8 位灰度",
+    "///< YUV422 packed in YUYV order": "///< 按 YUYV 顺序打包的 YUV422",
+    "///< YUV422 packed in YVYU order": "///< 按 YVYU 顺序打包的 YUV422",
+    "///< YUV422 packed in VYUY order": "///< 按 VYUY 顺序打包的 YUV422",
+    "///< YUV422 packed in UYVY order": "///< 按 UYVY 顺序打包的 YUV422",
+    "///< YUV420 packed in OUYY/EVYY order": "///< 按 OUYY/EVYY 顺序打包的 YUV420",
+    "/**\n * @brief LCD color range\n */": "/**\n * @brief LCD 色彩范围\n */",
+    "/*!< Limited color range */": "/*!< 受限色彩范围 */",
+    "/*!< Full color range */": "/*!< 全色彩范围 */",
+    "/**\n * @brief The standard used for conversion between RGB and YUV\n */": "/**\n * @brief RGB 与 YUV 之间转换所使用的标准\n */",
+    "/*!< YUV<->RGB conversion standard: BT.601 */": "/*!< YUV<->RGB 转换标准：BT.601 */",
+    "/*!< YUV<->RGB conversion standard: BT.709 */": "/*!< YUV<->RGB 转换标准：BT.709 */"
+  }
+}
